@@ -8,6 +8,8 @@
     "test:frontend": "playwright test --project=frontend",
     "test:backend": "playwright test --project=backend",
     "test:headed": "playwright test --project=frontend --headed",
+    "test:list": "playwright test --list",
+    "typecheck": "tsc --noEmit",
     "report": "playwright show-report"
   },
   "keywords": [],

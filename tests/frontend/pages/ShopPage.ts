@@ -4,7 +4,6 @@ export class ShopPage {
     async addProduct(productName: string) {
         await this.page.goto('/collections/all');
         await this.page.getByRole('link', { name: new RegExp(`^${productName}`) }).first().click();
-        6 / 12
         const addResponse = this.page.waitForResponse(
             response => response.url().includes('/cart/add.js') && response.ok(),
         );
